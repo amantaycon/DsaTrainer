@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aman Taycon">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="/image/DSA_Trainer.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <link rel="stylesheet" href="/css/floattab.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <% if(data && data.themename){%>
+        <link rel="stylesheet" href="/css1/<%- data.themename %>">
+        <%}else{%>
+            <link rel="stylesheet" href="/css1/defaulthemes.css">
+        <% } %>
+    <link rel="stylesheet" href="/css1/main.css">
+    <link rel="stylesheet" href="/css1/responsivenase.css">
+    <link rel="stylesheet" href="/css/popop.css">
+
+    <title>Setting | DSA Trainer</title>
+    <meta name="description" content="Setting page for user">
+    <meta name="keywords" content="DSA Trainer, Setting page">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="ifect_page">
+    <header id="ulogo" class="stit0 shead " style="position: fixed; width: 100vw;">
+        <div class="blur header-se">
+            <div class="flex_r m-lr-20">
+                <a class="flex_r" href="/">
+                    <div class="center">
+                        <img class="header-lg center" src="/image/DSA_transparent1.png" alt="logo of website">
+                    </div>
+                </a>
+            </div>
+            <div class="centerrow"></div>
+            <div class="center">
+                <div class="center">
+                    <h2 class="welfp white mar_p_20">Settings</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="ifectp ifect14"></div>
+        <div class="ifectp ifect15"></div>
+        <div class="ifectp ifect16"></div>
+        <div class="ifectp ifect17"></div>
+        <div class="ifectp ifect18"></div>
+        <div class="ifectp ifect19"></div>
+
+        <div id="main">
+            <div style="height: 10vh;"></div>
+
+            <div class="presave">
+                <div onclick="updateData(event)" class="prsave point"><span>Save</span></div>
+            </div>
+            <div class="setting">
+                <div class="sbox seti">
+                    <div class="prfpic">
+                        <img class="prfpic" src=/<%- data.userurl %>/profile_pic alt="DP">
+                        <input id="uphoto" name="dp" type="file" accept="image/*">
+                        <label for="uphoto" class="updatep"><span>Update Photo</span></label>
+                    </div>
+                    <div id="prephoto">
+                        <div class="predesin">
+                            <div class="cross"><svg onclick="hidefloat()" class="svg point" fill="var(--black)"
+                                    viewBox="0 0 490 490" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <polygon
+                                            points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 ">
+                                        </polygon>
+                                    </g>
+                                </svg></div>
+                            <div class="adjstpre">
+                                <img id="preview" alt="Preview" />
+                                <button id="cropButton">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seticon">
+                        <div class="sminibox">
+                            <label class="smboxl" for="username">Update username</label>
+                            <input id="username" class="smboxi" oninput="userurlChanged(this)" type="text"
+                                placeholder="Enter Unique username" value=<%- data.userurl %>>
+                        </div>
+                        <div class="sminibox">
+                            <label class="smboxl" for="fullname">Update Full Name</label>
+                            <input id="fullname" class="smboxi" type="text" placeholder="Enter Your Full Name"
+                                value="<%- data.fullname %>">
+                        </div>
+                    </div>
+                    <div class="seticon">
+                        <div class="sminibox">
+                            <label class="smboxl" for="gender">Update Gender</label>
+                            <select id="gender" class="smboxi point">
+                                <option <% if(data.gender==0){ %>selected<% } %> value="0" >Male
+                                </option>
+                                <option value="1" <% if(data.gender==1){ %>selected<% } %> >Female
+                                </option>
+                                <option value="2" <% if(data.gender==2){ %>selected<% } %> >Other
+                                </option>
+                                <option value=null <% if(data.gender==null){ %>selected<% } %>
+                                        disabled>Gender
+                                </option>
+                            </select>
+                        </div>
+                        <div class="sminibox">
+                            <label class="smboxl" for="theme">Themes</label>
+                            <select id="theme" class="smboxi point">
+                                <% themes.forEach(item=>{%>
+                                <option value="<%- item.name %>" <% if(data.themename==item.name){ %>selected<% } %> ><%- item.name %>
+                                </option>
+                                <% }); %>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sbox grida">
+                    <div class="sminibox">
+                        <label class="smboxl" for="bio">Bio</label>
+                        <textarea class="smboxi textarea" name="" id="bio"><%- data.bio %></textarea>
+                    </div>
+                    <div class="sminibox">
+                        <label class="smboxl" for="notification">Notifications on Email</label>
+                        <select id="notification" class="smboxi point">
+                            <option value="0" <% if(data.notification==0){ %>selected<% } %>>NO</option>
+                            <option <% if(data.notification==1){ %>selected<% } %>
+                                    value="1">YES</option>
+                        </select>
+                    </div>
+                    <div class="sminibox">
+                        <label class="smboxl" for="layouts">Layouts</label>
+                        <select id="layouts" class="smboxi point">
+                            <option value="0">Coming Soon</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

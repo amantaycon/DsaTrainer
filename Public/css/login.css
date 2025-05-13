@@ -1,0 +1,411 @@
+.newuser,
+#fill,
+#pass1,
+#pass2{
+    display: block;
+    border-radius: 15px;
+    border-style: none;
+    padding-left: 15px;
+    height: 50px;
+    width: 350px;
+    position: relative;
+    border: 2px solid var(--orange);
+    color: var(--black);
+    margin: 15px 25px;
+    outline-color: var(--green);
+}
+.multieffect{
+    background: linear-gradient(45deg,rgb(23, 84, 29), rgb(38, 87, 92));
+}
+.clrorg{
+    color: var(--orange);
+}
+.clrblue{
+    color: var(--blue);
+}
+.clrdark{
+    color: var(--dark);
+}
+.textshadowblue{
+    text-shadow: -2px 2px 4px var(--blue);
+}
+.textshadowgreen{
+    text-shadow: -2px 2px 4px var(--green);
+}
+.clesky{
+    color: var(--sky);
+}
+.clrgrn{
+    color: var(--green);
+}
+#container,
+.next1:hover {
+    background: linear-gradient(45deg, rgb(139, 162, 183), rgb(110, 129, 111));
+}
+.back_white {
+    background: var(--white)
+}
+
+#create_account p,
+.anone {
+    text-decoration: none
+}
+
+.curser_p,
+.email_main {
+    cursor: pointer
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row
+}
+
+.height {
+    height: 20px
+}
+
+#lable_check,
+.black,
+.email_main,
+.text {
+    color: var(--black)
+}
+
+.white {
+    color: var(--white)
+}
+
+.back_black {
+    background: var(--black)
+}
+
+#create_account:hover,
+.next1 {
+    background: var(--light_white)
+}
+
+.padd {
+    padding: 2px
+}
+
+.padd-1 {
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: medium
+}
+
+.padd-2 {
+    padding: 5px
+}
+
+.radius {
+    border-radius: 100%
+}
+
+.r {
+    border-radius: 22px
+}
+
+.hw {
+    width: 181px;
+    height: 33px
+}
+
+.center1 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#login_bar1 {
+    height: 100vh;
+    min-height: 555px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#container {
+    margin: auto 0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px var(--black)
+}
+
+.newuser,
+#fill,
+#pass1,
+#pass2 {
+    display: block;
+    border-radius: 15px;
+    border-style: none;
+    padding-left: 15px;
+    height: 50px;
+    width: 350px;
+    position: relative;
+    border: 2px solid var(--orange);
+    color: var(--black);
+    margin: 15px 25px;
+    outline-color: var(--green);
+}
+
+#color-2,
+#create_account p,
+#logo_name,
+.c_orange,
+.email_main:hover,
+.next1:hover {
+    color: var(--orange)
+}
+
+#color-3,
+#logoanim::after {
+    color: var(--light_white)
+}
+
+.log_h_main {
+    margin: 10px 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.line_log {
+    width: 50px;
+    color: var(--black);
+    height: .01px
+}
+
+.login_h_e {
+    color: var(--black);
+    font-size: 15px;
+    opacity: .8
+}
+
+.f_right {
+    float: right
+}
+
+.f_left {
+    float: left
+}
+
+.next1 {
+    width: 90px;
+    height: 40px;
+    border: 1px solid var(--orange);
+    color: var(--light);
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 10px;
+}
+
+#logoanim::after,
+.email_sub {
+    font-size: larger
+}
+
+.button_main {
+    display: inline
+}
+
+#create_account p {
+    font-size: large;
+    margin: 5px 10px
+}
+
+#create_account {
+    float: left;
+    width: fit-content;
+    padding: 5px;
+    background: 0 0;
+    border: none
+}
+
+#logo {
+    height: 7em;
+    border-radius: 5em;
+    margin-bottom: -15px
+}
+
+#logo_name {
+    font-size: 30px
+}
+
+@media screen and (max-width:555px) {
+    #login_bar1 {
+        min-height: 0;
+        margin: 0;
+        padding: 0 0;
+        width: 100%;
+    }
+
+    #container {
+        margin: auto 0;
+        padding: 0;
+        box-shadow: 0 0 0 var(--black);
+        width: 95%
+    }
+
+    .newuser,
+    #fill,
+    #pass1,
+    #pass2 {
+        height: 50px;
+        width: 80%;
+        margin: 0
+    }
+
+    #checkbox {
+        height: 15px;
+        width: 15px;
+        margin: 15px
+    }
+
+    .hw {
+        width: 200px
+    }
+}
+
+.text {
+    padding: 5px 10px
+}
+
+.email_main {
+    border: 1px solid var(--black);
+    padding: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.email_main:hover {
+    border: 1px solid var(--orange)
+}
+
+#logoanim,
+#logoanim::after {
+    border-radius: 100%;
+    display: flex
+}
+
+#lable_check {
+    font-size: large
+}
+
+@media screen and (min-width:555px) {
+    #checkbox {
+        height: 15px;
+        width: 15px;
+        margin: 5px 5px 5px 50px
+    }
+}
+
+#checkbox {
+    accent-color: var(--light_white)
+}
+
+.color_green {
+    color: green
+}
+
+.color_red {
+    color: red
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+#main_body1 {
+    display: none;
+    z-index: 3;
+    position: fixed
+}
+
+#body_main {
+    width: 100vw;
+    height: 100vh;
+    background: var(--darklow)
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.loding {
+    font-size: xx-large;
+    color: var(--orange)
+}
+
+.font_size {
+    font-size: 50px
+}
+
+#color-1 {
+    color: var(--light_black)
+}
+
+#logoanim {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px var(--black);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center
+}
+
+#logoanim::before {
+    content: "";
+    background-image: conic-gradient(var(--orange) 20deg, transparent 300deg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: .5s linear infinite rotate
+}
+
+#logoanim::after {
+    content: "";
+    width: 95%;
+    height: 95%;
+    background: url(http://127.0.0.1:5500/picture/weblogo1.png) center center/100% auto no-repeat;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    box-shadow: inset 0 0 30px var(--orange)
+}
+
+@media screen and (max-width:600px) {
+    #logoanim {
+        width: 150px;
+        height: 150px
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

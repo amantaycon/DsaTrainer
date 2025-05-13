@@ -1,0 +1,194 @@
+:root {
+    --orange: rgb(255, 0, 51);
+    --light_orange: rgb(165, 30, 55);
+    --white: rgb(0, 0, 0);
+    --light_white: rgb(38, 36, 36);
+    --black: rgb(255, 255, 255);
+    --light_black: rgb(169, 149, 142);
+    --sky: rgb(0, 251, 255);
+    --purple: rgb(191, 0, 255);
+    --atag: radial-gradient(rgba(255, 177, 194, 0.575), rgba(171, 141, 136, 0.591));
+    --navback: linear-gradient(0.03turn, rgba(122, 0, 20, 0.151), rgba(159, 34, 0, 0.208));
+    --codeback: linear-gradient(0.03turn, rgba(56, 0, 6, 0.682), rgba(56, 9, 0, 0.823));
+    --introback: url("https://images.unsplash.com/photo-1672086452857-3651681941b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fENvbG9ycyUyMG9mJTIwTmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1920&q=60");
+    --font_style: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --pageback: linear-gradient(0.98turn, rgb(255, 202, 214), rgb(255, 222, 228), rgb(255, 233, 238), rgb(255, 235, 230), rgb(255, 219, 226), rgb(255, 204, 194), rgb(255, 202, 210), rgb(255, 193, 203), rgb(255, 116, 135))
+}
+.smboxi {
+    background-color: var(--black);
+    color: var(--white);
+ }
+.ifect_back::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .08)
+}
+
+.fre {
+    background: radial-gradient(rgba(255, 111, 147, .491), rgba(255, 97, 57, .39));
+    backdrop-filter: blur(5px)
+}
+
+.ifect_page {
+    background: var(--pageback)
+}
+
+.ifect {
+    position: absolute;
+    z-index: 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 100%
+}
+
+.ifectp,
+.ifects {
+    position: absolute;
+    height: 22vw;
+    width: 22vw;
+    max-height: 15rem;
+    max-width: 15rem;
+    border-radius: 100%
+}
+
+.ifectp {
+    z-index: -2
+}
+
+.ifects {
+    z-index: 0
+}
+
+.ifect14,
+.ifect15,
+.ifect16,
+.ifect17,
+.ifect18,
+.ifect19 {
+    position: fixed
+}
+
+.ifect1,
+.ifect2,
+.ifect3,
+.ifect4,
+.ifect5,
+.ifect6 {
+    display: none
+}
+
+.ifect7 {
+    bottom: 2vh;
+    left: 3vw;
+    box-shadow: inset 0 -30px 50px #821f34
+}
+
+.ifect8 {
+    top: 2vh;
+    right: 3vw;
+    box-shadow: inset 0 -30px 50px #d43900bd
+}
+
+.ifect9 {
+    bottom: 20vh;
+    left: 20vw;
+    box-shadow: inset 0 -30px 50px #9f001b92
+}
+
+.ifect10 {
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 -30px 30px #ff4911ae;
+    z-index: -1
+}
+
+.ifect12 {
+    left: 0;
+    box-shadow: inset 0 -30px 30px #ff002f92
+}
+
+.ifect13 {
+    box-shadow: inset 0 -20px 20px #ff002f81
+}
+
+.ifect14 {
+    top: 0;
+    right: 10%;
+    box-shadow: inset 0 -30px 50px #e48231
+}
+
+.ifect15 {
+    top: 15vh;
+    left: 10%;
+    box-shadow: inset 0 -30px 40px #94163c
+}
+
+.ifect16 {
+    bottom: 0;
+    right: 2vw;
+    box-shadow: inset 0 -30px 20px #821f3b
+}
+
+.ifect17 {
+    top: 50%;
+    left: 20vw;
+    box-shadow: inset 0 -30px 30px #821f36
+}
+
+.ifect18 {
+    bottom: 70%;
+    left: 3vw;
+    box-shadow: inset 0 -30px 50px #9e1a00c8
+}
+
+.ifect19 {
+    bottom: 65vh;
+    left: 15vw;
+    box-shadow: inset 0 -30px 50px #bb1b78
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(.03turn, rgba(63, 0, 30, .497), rgba(68, 0, 35, .493), rgba(48, 0, 11, .501), rgba(48, 14, 0, .501), rgba(48, 0, 18, .471), rgba(182, 0, 33, .498));
+    z-index: 2
+}
+
+:hover.foota {
+    box-shadow: 0 5px 3px var(--light_orange);
+    background: radial-gradient(rgba(255, 177, 193, .575), rgba(171, 143, 136, .591));
+    color: var(--black);
+    font-size: 28px
+}
+
+.blur {
+    backdrop-filter: blur(15px)
+}
+
+.foot-1 {
+    backdrop-filter: blur(10px)
+}
+
+#main,
+#mainpri {
+    backdrop-filter: blur(40px)
+}
+
+.pagelist {
+    height: 3rem;
+    background: linear-gradient(.03turn, rgba(100, 0, 12, .222), rgba(106, 0, 12, .253))
+}
+
+.keyword-c {
+    color: #ff6da7
+}
+
+.comment-c {
+    color: #4CAF50
+}
+
+.function-c {
+    color: #39ffff
+}

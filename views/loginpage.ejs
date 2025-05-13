@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang=en>
+<!-- This is the head section -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aman Taycon">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="/image/DSA_Trainer.ico" type="image/x-icon">
+    <title>Sign in-Code King Accounts</title>
+    <!-- This is the style tag -->
+    <style>
+        :root {
+            /* declare variable in CSS */
+            --orange: rgb(45, 252, 255);
+            --light_orange: rgb(0, 152, 144);
+            --white: white;
+            --light_white: rgb(165, 186, 188);
+            --black: black;
+            --light_black: rgb(52 52 52);
+            --darklow: rgba(38, 38, 38, 0.5);
+            --blue: rgb(17, 141, 250);
+            --sky: rgb(45, 252, 255);
+            --dark: rgb(57, 58, 53);
+            --green: rgb(76, 254, 100);
+            --darkblue: rgb(0, 0, 255);
+            --darkgreen: rgb(0, 255, 0);
+            --darksky: rgb(0, 255, 255);
+        }
+    </style>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<!-- This is a body section -->
+
+<body>
+    <div id=main>
+        <main>
+            <div class="multieffect" id=login_bar1>
+                <div id=container>
+                    <center><img src="./image/DSA_Trainer.webp" id=logo>
+                        <h1 id=logo_name><span class="clrdark textshadowblue">DSA</span><span class="white textshadowgreen"> Trainer</span></h1>
+                    </center>
+                    <% if(mode.id===0){ %>
+                        <center class=log_h_main>
+                            <a href="/auth/google" class="anone center1 back_black padd hw r">
+                                <div class="anone center1 back_black padd hw r">
+                                    <div class="flex_row center1 r">
+                                        <div class="center1 back_white padd-2 radius">
+                                            <svg version=1.1 viewBox="0 0 48 48"
+                                                class=height>
+                                                <g>
+                                                    <path fill=#EA4335
+                                                        d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+                                                    </path>
+                                                    <path fill=#4285F4
+                                                        d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+                                                    </path>
+                                                    <path fill=#FBBC05
+                                                        d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                                                    </path>
+                                                    <path fill=#34A853
+                                                        d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+                                                    </path>
+                                                    <path fill=none d="M0 0h48v48H0z"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="height center1 white padd-1">Sign in with Google</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </center>
+                        <% }else if(mode.id===1 || mode.id===2 || mode.id===3) {%>
+                            <center class=email_main onclick=history.back()>
+                                <span class=email_sub><%- mode.username %></span>
+                            </center><br>
+                            <% } %>
+                                <% if(mode.id===0){ %>
+                                    <center class=log_h_main>
+                                        <hr class=line_log><span class=login_h_e>OR LOGIN WITH EMAIL</span>
+                                        <hr class=line_log>
+                                    </center>
+                                    <% }if(mode.err===1){%>
+                                        <center>
+                                            <p style="color: red;"><%- mode.error %> </p>
+                                        </center>
+                                        <%} if(mode.id===0){ %>
+                                            <form action=/auth method=post>
+                                                <center>
+                                                    <input id=fill type=text name=user
+                                                        placeholder="Enter Username or Email Id" required>
+                                                </center><br>
+                                                <div class=button_main>
+                                                    <button class="next1 f_right curser_p" name=next
+                                                        value=next>Next</button>
+                                                    <button class=curser_p name=next value=create_account
+                                                        id=create_account>
+                                                        <p> Create account</p>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                            <% }else if(mode.id===1) {%>
+                                                <form id=pass_form action=auth3 method=post>
+                                                    <center><input id=fill type=password name=pass
+                                                            placeholder="Enter Your Password" required></center>
+                                                    <div>
+                                                        <input class=curser_p id=checkbox onclick=showpassword()
+                                                            type=checkbox><label id=lable_check class=curser_p
+                                                            for=checkbox>Show password</label>
+                                                    </div>
+                                                    <br>
+                                                    <center>
+                                                        <p class=text>If you have forgotten your password, click on
+                                                            Login with OTP.</p>
+                                                    </center><br><br>
+                                                    <center>
+                                                        <div class=button_main>
+                                                            <button id=reotp class="next1 f_right curser_p" name=next
+                                                                value=next>Next</button>
+                                                            <div id=create_account class=curser_p onclick=withotp()>
+                                                                <span class=text>Login with OTP</span>
+                                                            </div>
+                                                        </div>
+                                                    </center>
+                                                </form>
+                                                <% }else if(mode.id===2) {%>
+                                                    <form action=auth1 method=post>
+                                                        <center><input id=fill name=otp placeholder="Enter OTP"
+                                                                required></center>
+                                                        <% if(mode.err==0){%>
+                                                            <center>
+                                                                <p class=color_green>⌖<%- mode.error %></p>
+                                                            </center>
+                                                            <%}%>
+                                                                <br>
+                                                                <center>
+                                                                    <div class=button_main>
+                                                                        <button class="next1 f_right" name=next
+                                                                            value=next>Next</button>
+                                                                    </div>
+                                                                </center>
+                                                    </form>
+                                                    <% }else if(mode.id===3) {%>
+                                                        <form action=auth2 method=post>
+                                                            <center><input id=pass1 type=password name=pass1
+                                                                    placeholder="Enter new Password" required></center>
+                                                            <div>
+                                                                <input class=curser_p id=checkbox onclick=showpassword()
+                                                                    type=checkbox><label id=lable_check class=curser_p
+                                                                    for=checkbox>Show password</label>
+                                                            </div>
+                                                            <center><input id=pass2 type=password name=pass2
+                                                                    placeholder="Confirm Password" required></center>
+                                                            <br>
+                                                            <br>
+                                                            <center>
+                                                                <div class=button_main>
+                                                                    <button id=next class="next1 f_right curser_p" name=next
+                                                                        value=next>Next</button>
+                                                                </div>
+                                                                <div class=button_main>
+                                                                    <div onclick="skipass()" id=skip class="next1 f_left curser_p"
+                                                                        style=display:flex;align-items:center;justify-content:center>
+                                                                        Skip</div>
+                                                                </div>
+                                                            </center>
+                                                        </form>
+                                                        <% } %><br><br><br>
+                </div>
+                <div>
+                    <ul class="flex_row" style="margin: -10 0;">
+                        <li><a class="c_orange" style="margin: 0 10px;" href="https://www.codeking.tech/Privacy"
+                                target="_blank">Privacy</a></li>
+                        <li><a class="c_orange" style="margin: 0 10px;" href="https://www.codeking.tech/Terms"
+                                target="_blank">Term</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <% if(mode.id===1) {%>
+        <script>
+            function showpassword() {
+                var t = document.getElementById("fill"); "password" === t.type ? t.type = "text" : t.type = "password"
+            }
+        </script>
+        <script>
+            function withotp() {
+                var a = document.getElementById("reotp");
+                a.value = "withotp";
+                document.getElementById("fill").value = "password";
+                a.click();
+            }
+        </script>
+        <%}else if(mode.id===3) {%>
+            <script>
+                function showpassword() {
+                    var e = document.getElementById("pass1"); "password" === e.type ? e.type = "text" : e.type = "password"
+                }
+            </script>
+            <script>
+                setInterval(passCheck, 1e3);
+                const input1 = document.getElementById("pass1"), input2 = document.getElementById("pass2");
+                function passCheck() { input1.value != input2.value ? (input2.style.borderColor = "red", input1.style.borderColor = "red") : (input2.style.borderColor = "var(--green)", input1.style.borderColor = "var(--green)") }
+            </script>
+            <script>
+                function skipass() {document.getElementById('pass1').value = "password";document.getElementById('pass2').value = "password"; var a = document.getElementById('next');a.value = 'skip';a.click();
+                }
+            </script>
+            <%}%>
+</body>
+
+</html>

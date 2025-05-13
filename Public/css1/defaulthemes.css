@@ -1,0 +1,230 @@
+:root {
+
+     /* declare variable in CSS */
+     --orange: rgb(45, 252, 255);
+     --light_orange: rgb(0, 152, 144);
+     --white: white;
+     --light_white: rgb(165, 186, 188);
+     --black: black;
+     --light_black: rgb(52 52 52);
+     --darklow: rgba(38, 38, 38, 0.5);
+     --blue: rgb(17, 141, 250);
+     --sky: rgb(45, 252, 255);
+     --red: rgb(255, 0, 0);
+     --dark: rgb(57, 58, 53);
+     --green: rgb(76, 254, 100);
+     --darkblue: rgb(0, 0, 255);
+     --darkgreen: rgb(0, 255, 0);
+     --darksky: rgb(0, 255, 255);
+    --purple: rgb(191, 0, 255);
+    --link: rgb(3, 235, 3);
+    --atag: radial-gradient(rgba(90, 132, 132, 0.575), rgba(76, 97, 98, 0.591));
+    --navback: linear-gradient(0.03turn, rgba(122, 39, 0, 0.151), rgba(159, 0, 106, 0.208));
+    --codeback: linear-gradient(0.03turn, rgba(48, 0, 56, 0.682), rgba(0, 55, 56, 0.823));
+    --color1: linear-gradient(-0.15turn, rgba(133, 0, 156, 0.526), rgba(0, 109, 111, 0.761));
+    --color2: linear-gradient(-0.15turn, rgba(78, 0, 146, 0.761), rgba(217, 0, 255, 0.526));
+    --color3: linear-gradient(-0.15turn, rgba(0, 111, 20, 0.59), rgba(0, 126, 133, 0.819));
+    --color4: linear-gradient(-0.15turn, rgba(217, 0, 255, 0.526), rgba(125, 50, 0, 0.704));
+    --color5: linear-gradient(-0.15turn, rgba(217, 0, 255, 0.526), rgba(128, 0, 92, 0.751));
+    --color6: linear-gradient(-0.15turn, rgba(0, 124, 75, 0.532), rgba(137, 0, 147, 0.761));
+    --introback: linear-gradient(-0.15turn, rgb(0, 60, 27), rgb(1, 49, 40), rgb(9, 44, 58));
+    --font_style: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --pageback: linear-gradient(0.15turn, rgb(9, 44, 58),rgb(1, 49, 40),rgb(0, 60, 27));
+}
+
+.ifect_page {
+    background: var(--pageback);
+}
+
+.ifect {
+    position: absolute;
+    z-index: 0;
+    height: 15rem;
+    width: 15rem;
+    clip-path: polygon(85% 5%, 92% 50%, 100% 100%, 10% 70%)
+}
+
+.ifectp,
+.ifects {
+    position: absolute;
+    height: 22vw;
+    width: 22vw;
+    max-height: 15rem;
+    max-width: 15rem;
+    clip-path: polygon(85% 5%, 92% 50%, 100% 100%, 10% 70%)
+}
+
+.ifectp {
+    z-index: -2
+}
+
+.ifects {
+    z-index: 0
+}
+
+.ifect1 {
+    top: 12%;
+    left: 5%;
+    background: var(--color1)
+}
+
+.ifect2 {
+    top: 2%;
+    right: 5%;
+    background: var(--color2);
+    box-shadow: inset 0 30px 50px #ae00ff
+}
+
+.ifect3 {
+    top: 42%;
+    left: 30%;
+    background: var(--color3)
+}
+
+.ifect4 {
+    top: 60%;
+    right: 2%;
+    background: var(--color4)
+}
+
+.ifect5 {
+    bottom: 30%;
+    right: 20%;
+    background: var(--color5)
+}
+
+.ifect6 {
+    bottom: 2%;
+    left: 5%;
+    background: var(--color6)
+}
+
+.ifect7 {
+    bottom: 2vh;
+    left: 3vw;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(0, 85, 85, .618));
+    box-shadow: inset 0 30px 50px #1f8263
+}
+
+.ifect8 {
+    top: 2vh;
+    right: 3vw;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(85, 54, 0, .618));
+    box-shadow: inset 0 30px 50px #d45100bd
+}
+
+.ifect9 {
+    bottom: 20vh;
+    left: 20vw;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(182, 0, 124, .618));
+    box-shadow: inset 0 30px 50px #9f008f92
+}
+
+.ifect10 {
+    top: 0;
+    left: 0;
+    background: linear-gradient(.7turn, #009471, #5e0094, #7e009b, #8a0032);
+    box-shadow: inset 0 30px 50px #8e0037;
+    z-index: -1
+}
+
+.ifect12 {
+    left: 0;
+    background: linear-gradient(.7turn, rgba(67, 142, 1, 0.519), rgba(232, 23, 255, .428));
+    box-shadow: inset 0 30px 50px #018a7e92
+}
+
+.ifect13 {
+    background: linear-gradient(.7turn, rgba(133, 2, 148, 0.441), rgba(1, 138, 97, 0.519));
+    box-shadow: inset 0 10px 30px #ff00e681
+}
+
+.ifect14,
+.ifect15,
+.ifect16,
+.ifect17,
+.ifect18,
+.ifect19 {
+    position: fixed;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(0, 85, 85, .618));
+    box-shadow: inset 0 30px 50px #1f8263
+}
+
+.ifect14 {
+    top: 0;
+    right: 10%
+}
+
+.ifect15 {
+    top: 15vh;
+    left: 10%
+}
+
+.ifect16 {
+    bottom: 0;
+    right: 2vw
+}
+
+.ifect17 {
+    top: 50%;
+    left: 20vw
+}
+
+.ifect18 {
+    bottom: 70%;
+    left: 3vw
+}
+
+.ifect19 {
+    bottom: 65vh;
+    left: 15vw
+}
+
+.fre {
+    background: radial-gradient(rgba(70, 132, 140, 0.598), rgba(81, 129, 92, 0.39));
+    backdrop-filter: blur(5px)
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(.03turn, rgba(0, 90, 100, .497), rgba(0, 62, 60, .493), rgba(0, 46, 48, .501), rgba(0, 46, 48, .501), rgba(0, 46, 48, .471), rgba(182, 73, 0, .498));
+    z-index: 2
+}
+
+:hover.foota {
+    box-shadow: 0 5px 3px var(--black);
+    background: radial-gradient(rgba(96, 139, 139, 0.575), rgba(90, 112, 113, 0.591));
+    color: var(--black);
+    font-size: 28px
+}
+
+.blur {
+    backdrop-filter: blur(20px)
+}
+
+.foot-1 {
+    backdrop-filter: blur(10px)
+}
+
+#main,
+#mainpri {
+    backdrop-filter: blur(40px)
+}
+
+.pagelist {
+    height: 3rem;
+    background: linear-gradient(.03turn, rgba(0, 51, 57, .222), rgba(0, 48, 46, .253))
+}
+
+.keyword-c {
+    color: rgb(109 169 255);
+}
+
+.comment-c {
+    color: rgb(21 199 0);
+}
+
+.function-c {
+    color: rgb(255 139 57);
+}

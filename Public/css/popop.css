@@ -1,0 +1,337 @@
+
+/* Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Popup Box */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Form Styling */
+.classh3 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--green);
+}
+
+.classinput {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.classbutton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#addMore {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#addMore:hover {
+    background-color: #e0a800;
+}
+
+#saveData {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+#saveData:hover {
+    background-color: var(--darkgreen);
+}
+
+#closePopup {
+    background-color: #dc3545;
+    color: var(--white);
+}
+
+#closePopup:hover {
+    background-color: #c82333;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 8px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup .input{
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup .button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup .close1 {
+    background: var(--darksky);
+}
+
+.popup .delete {
+    background: rgb(255, 0, 0);
+}
+
+.popup .save{
+    background: var(--darkgreen);
+}
+
+.edit-sub {
+    cursor: pointer;
+    color: var(--darkblue);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.input::placeholder {
+    color: var(--light_black);
+}
+
+
+
+.toolbar #fontSize{
+    width: 50px;
+    height: 15px;
+}
+
+.toolbar button,
+.toolbar input,
+.toolbar select {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: var(--light_black);
+    color: var(--darkgreen);
+}
+
+.toolbar .button11:hover{
+    background: var(--blue);
+}
+
+.toolbar {
+    background: var(--atag);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 4px 10px var(--darkgreen);
+    position: sticky;
+    top: 50px;
+    z-index: 5;
+
+}
+.none{
+    display: none;
+}
+
+#editpencil {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#editpencil:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#editorPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.close-btn:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+
+#editable img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    resize: both;
+    overflow: auto;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.code-block {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f5f5f5;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+#editable{
+    color: var(--white);
+}
+
+.color1{
+    color: var(--orange);
+}
+.color2{
+    color: var(--white);
+}
+.color3{
+    color: var(--black);
+}
+.color4{
+    color: var(--green);
+}
+.color5{
+    color: var(--purple);
+}
+
+
+pre {
+    position: relative;
+    padding: 16px;
+    border-radius: 8px;
+    background: #282c34;
+    color: #abb2bf;
+    font-size: 14px;
+    overflow-x: auto;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    background: #61afef;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.copy-btn:hover {
+    background: #4c8bd6;
+}
+
+code {
+    font-family: "Fira Code", monospace;
+}
+
+[contenteditable="true"] pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+#editable li{
+    list-style: circle;
+}

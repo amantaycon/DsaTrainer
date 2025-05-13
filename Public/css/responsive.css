@@ -1,0 +1,330 @@
+
+@media screen and ((min-width:1200px)) {
+    .lgn1{
+        width: 300px;
+    }
+    .consty {
+        width: fit-content;
+        position: relative;
+        float: right;
+    }
+    .scrollver {
+        width: 700px;
+    }
+}
+@media screen and ((min-width:900px) and (max-width:1200px)) {
+    .prfpic1 {
+        width: 250px;
+    }
+    .consty {
+        width: fit-content;
+        position: relative;
+        float: right;
+    }
+    .protop{
+        margin-top: 15px;
+    }
+    .martop{
+        margin-top: 5px;
+    }
+    .shrespon {
+        display: none;
+    }
+    .maifon {
+        font-size: 38px;
+    }
+    .grida {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .postcon {
+        width: 80vw;
+    }
+}
+@media screen and ((min-width:600px) and (max-width:900px)) {
+    .welfname{
+        font-size: 30px;
+    }
+    .prfpic1 {
+        width: 200px;
+    }
+    .messtextside{
+        display: none;
+    }
+    .grid3 {
+        grid-template-columns: 8vw auto 8vw;
+    }
+    .consty {
+        width: fit-content;
+    }
+    .consty button{
+        position: relative;
+        width: 130px;
+    }
+    .martop{
+        margin-top: 5px;
+    }
+    .protop{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .marle{
+        margin-left: 0;
+        text-align: center;
+    }
+    .postcon {
+        width: 90vw;
+    }
+    .shrespon {
+        display: none;
+    }
+    .maifon {
+        font-size: 36px;
+    }
+    .lgn2{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 8vh;
+
+    }
+    .seti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prfpic {
+        width: 15vw;
+    }
+    .grida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .predesin{
+        width: 70vw;
+        max-width: 90vw;
+        height: 80vh;
+    }
+}
+@media screen and ((min-width:400px) and (max-width:600px)) {
+    .smboxi {
+        width: 220px;
+    }
+    .prfpic1 {
+        width: 200px;
+    }
+    .welfname{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:400px) {
+    .welfname{
+        font-size: 28px;
+    }
+    .prfpic1 {
+        width: 150px;
+    }
+    #fixedTabMenumess {
+        right: -50px;
+    }
+    .notifihide{
+        display: none;
+    }
+    .mar5{
+        margin: 0 2px;
+    }
+    .maihi{
+        display: none;
+    }
+    .smboxi {
+        width: 150px;
+    }
+    #listfloat{
+        width: 250px;
+    }
+}
+@media screen and (max-width:600px) {
+    .fsp {
+        font-size: 18px;
+    }
+    .messtab {
+        bottom: 0;
+        height: 58px;
+    }
+    #imogifloat{
+        bottom: 103px;
+    }
+    .messtextside{
+        display: none;
+    }
+    .grid3 {
+        grid-template-columns: 1vw auto 1vw;
+    }
+    .mart20 {
+        height: calc(100% - 45px);
+        margin-bottom: 45px;
+    }
+    .buttonu{
+        bottom: 50px;
+    }
+    .proconfo{
+        bottom: 0;
+        right: 0;
+    }
+    .consty {
+        width: fit-content;
+    }
+    .consty button{
+        position: relative;
+        width: 130px;
+    }
+    .pocon1 {
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .martop{
+        margin-top: 5px;
+    }
+    .protop{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .marle{
+        margin-left: 0;
+        text-align: center;
+    }
+    .postcon {
+        width: 100vw;
+        height: calc(100vh - 90px);
+    }
+    #fixedTabMenu {
+        width: fit-content;
+        left: 50%;
+        bottom: 22px;
+        transform: translate(-50%, -50%);
+    }
+    #moreMenu {
+        position: fixed;
+        width: fit-content;
+        right: 10px;
+        left: unset;
+        top: 54px;
+    }
+    .seti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prfpic {
+        width: 150px;
+    }
+    .grida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lgn2{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 8vh;
+        width: 100%;
+    }
+    .userli{
+        margin-left: 4px;
+    }
+    .strick {
+        margin-left: 4px;
+    }
+    .mar5{
+        margin: 0 5px;
+    }
+    .flexr{
+        margin-right: 8px;
+    }
+    .h11l{
+        display: none;
+    }
+    .h11m{
+        display: flex;
+    }
+    .maifon {
+        font-size: 35px;
+    }
+    .shrespon {
+        display: none;
+    }
+     .lgn1{
+        position: fixed;
+        bottom: 0;
+        height: 45px;
+        z-index: 3;
+        width: 100%;
+     }
+     .lin{
+        margin: auto;
+     }
+     .sethide{
+        display: none;
+     }
+     .flexc{
+        height: fit-content;
+     }
+     .mart20mini{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+     }
+     .h11{
+        display: flex;
+        flex-direction: column;
+     }
+    
+    .mcdata{
+        width: 100%;
+    }
+    .sideb{
+        margin: 0;
+    }
+    .f10 {
+        width: 92vw;
+        margin-bottom: 8px;
+    }
+    .alcon{
+        padding: 5px 0;
+    }
+    .poflotn{
+        display: none;
+    }
+    .tabs{
+        flex-direction: row;
+    }
+}
+@keyframes pagnav {
+    0% {
+        width: 300px;
+    }
+    25%{
+        width: 250px;
+    }
+    50%{
+        width: 200px;
+    }
+    75%{
+        width: 150px;
+    }
+    100% {
+        width: 100px;
+    }
+}

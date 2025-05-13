@@ -1,0 +1,246 @@
+@media screen and (min-width:1000px) {
+    .welf {
+        font-size: 7vw;
+        z-index: 0
+    }
+
+    .welfp {
+        font-size: 30px;
+        font-family: var(--font_style)
+    }
+
+    .fre {
+        font-size: 50px;
+        height: 12vh;
+        padding: 20px
+    }
+
+    .mar_10v {
+        margin: 6vh 10vw
+    }
+
+    .footam,
+    .m-lr-20 {
+        margin-left: 20px
+    }
+
+    .m-2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 10rem
+    }
+
+    .m-2d {
+        padding: 5rem 0
+    }
+
+    .foot-12 {
+        display: grid;
+        grid-template-columns: auto auto auto auto
+    }
+
+    .footsocial {
+        float: right;
+        margin-right: 20px
+    }
+
+    .footam {
+        float: left
+    }
+
+    .m-0 {
+        margin-top: 15rem
+    }
+}
+
+@media screen and ((min-width:615px) and (max-width:1000px)) {
+
+    .foot-12,
+    .m-2 {
+        display: grid;
+        grid-template-columns: auto auto
+    }
+
+    .welf {
+        font-size: 9vw
+    }
+
+    .welfp {
+        font-size: xx-large
+    }
+
+    .fre {
+        font-size: 6vw;
+        height: 7rem;
+        padding: 20px
+    }
+
+    .mar_10v {
+        margin: 5vh 10vw
+    }
+
+    .m-2 {
+        margin-top: 6rem
+    }
+
+    .footsocial {
+        float: right;
+        margin-right: 20px
+    }
+
+    .footam {
+        float: left;
+        margin-left: 20px
+    }
+
+    .m-0 {
+        margin-top: 10rem
+    }
+
+    .m-lr-20 {
+        margin-left: 10px
+    }
+}
+
+@media screen and (max-width:615px) {
+    .ferror {
+        font-size: 50vw
+    }
+
+    .header-m {
+        grid-template-columns: 4rem auto 3rem
+    }
+
+    .fre,
+    .header-m {
+        height: 4rem
+    }
+
+    .foot-12,
+    .m-2 {
+        display: grid;
+        grid-template-columns: auto auto
+    }
+
+    .welf {
+        font-size: 10vw;
+        text-align: center
+    }
+
+    .welfp {
+        font-size: larger
+    }
+
+    .fre {
+        font-size: xx-large;
+        padding: 20px
+    }
+
+    .font-lg {
+        font-size: 30px
+    }
+
+    .header-up {
+        height: 3rem;
+        width: 3rem
+    }
+
+    .header-lg {
+        height: auto;
+        width: 5rem
+    }
+
+    .usernav {
+        right: .5rem;
+        top: 4rem
+    }
+
+    .m-2 {
+        margin-top: 4rem
+    }
+
+    .m-0 {
+        margin-top: 7rem
+    }
+
+    .m-lr-20 {
+        margin-left: 5px
+    }
+
+    .ovscroy::-webkit-scrollbar {
+        height: .1rem
+    }
+
+    .ovscrox::-webkit-scrollbar {
+        width: .1rem
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    #navpag,
+    .close {
+        display: block
+    }
+
+    #navpagnav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: .15s linear pagnav;
+        padding-top: 4rem
+    }
+
+    .navpage {
+        height: 100vh
+    }
+
+    #main {
+        padding-left: 0
+    }
+
+    .pfont {
+        font-size: medium
+    }
+
+    .hfont {
+        font-size: x-large;
+        font-weight: 400
+    }
+
+    .code::-webkit-scrollbar {
+        height: .2rem;
+        width: 0
+    }
+}
+
+@keyframes pagnav {
+    0% {
+        left: -300px
+    }
+
+    100% {
+        left: 0
+    }
+}
+
+@keyframes hea {
+    0% {
+        top: -5rem
+    }
+
+    100% {
+        top: 0
+    }
+}
+
+@keyframes navp {
+    0% {
+        right: -5rem
+    }
+
+    100% {
+        right: 2rem
+    }
+}

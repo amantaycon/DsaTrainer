@@ -1,0 +1,238 @@
+:root {
+    --orange: rgb(0, 4, 255);
+    --light_orange: rgb(0, 32, 190);
+    --white: rgb(231, 255, 251);
+    --light_white: rgb(172, 171, 171);
+    --black: rgb(255, 255, 255);
+    --light_black: rgb(167, 196, 195);
+    --sky: rgb(0, 66, 67);
+    --purple: rgb(59, 0, 78);
+    --atag: radial-gradient(rgba(25, 34, 34, 0.575), rgba(23, 27, 27, 0.591));
+    --navback: linear-gradient(0.03turn, rgba(67, 21, 0, 0.151), rgba(41, 0, 28, 0.208));
+    --codeback: linear-gradient(0.03turn, rgb(7 24 75 / 65%), rgb(23 0 49 / 82%));
+    --color1: linear-gradient(-0.15turn, rgba(102, 0, 120, 0.526), rgba(2, 123, 127, 0.761));
+    --color2: linear-gradient(-0.15turn, rgba(40, 0, 74, 0.761), rgba(105, 0, 124, 0.526));
+    --color3: linear-gradient(-0.15turn, rgba(0, 125, 23, 0.59), rgba(0, 91, 96, 0.819));
+    --color4: linear-gradient(-0.15turn, rgba(116, 0, 139, 0.526), rgba(122, 49, 0, 0.704));
+    --color5: linear-gradient(-0.15turn, rgba(124, 0, 145, 0.526), rgba(72, 0, 52, 0.751));
+    --color6: linear-gradient(-0.15turn, rgba(0, 111, 67, 0.532), rgba(67, 0, 72, 0.761));
+    --introback: url(https://images.unsplash.com/photo-1506220926022-cc5c12acdb35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1580&q=80);
+    --font_style: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --pageback: #121212
+}
+.smboxi {
+    background-color: var(--white);
+    color: var(--sky);
+ }
+
+.ifect_page {
+    background: var(--pageback)
+}
+
+.ifect {
+    position: absolute;
+    z-index: 0;
+    height: 15rem;
+    width: 15rem;
+    clip-path: polygon(85% 5%, 92% 50%, 100% 100%, 10% 70%)
+}
+
+.ifectp,
+.ifects {
+    position: absolute;
+    height: 22vw;
+    width: 22vw;
+    max-height: 15rem;
+    max-width: 15rem;
+    clip-path: polygon(85% 5%, 92% 50%, 100% 100%, 10% 70%)
+}
+
+.ifectp {
+    z-index: -2
+}
+
+.ifects {
+    z-index: 0
+}
+
+.ifect1 {
+    top: 12%;
+    left: 5%;
+    background: var(--color1)
+}
+
+.ifect2 {
+    top: 2%;
+    right: 5%;
+    background: var(--color2);
+    box-shadow: inset 0 30px 50px #570080
+}
+
+.ifect3 {
+    top: 42%;
+    left: 30%;
+    background: var(--color3)
+}
+
+.ifect4 {
+    top: 60%;
+    right: 2%;
+    background: var(--color4)
+}
+
+.ifect5 {
+    bottom: 30%;
+    right: 20%;
+    background: var(--color5)
+}
+
+.ifect6 {
+    bottom: 2%;
+    left: 5%;
+    background: var(--color6)
+}
+
+.ifect7 {
+    bottom: 2vh;
+    left: 3vw;
+    background: linear-gradient(.03turn, rgba(0, 82, 82, .519), rgba(0, 64, 64, .618));
+    box-shadow: inset 0 30px 50px #064632
+}
+
+.ifect8 {
+    top: 2vh;
+    right: 3vw;
+    background: linear-gradient(.03turn, rgba(0, 85, 85, .519), rgba(85, 54, 0, .618));
+    box-shadow: inset 0 30px 50px #712b00bd
+}
+
+.ifect9 {
+    bottom: 20vh;
+    left: 20vw;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(182, 0, 124, .618));
+    box-shadow: inset 0 30px 50px #9f008f92
+}
+
+.ifect10 {
+    top: 0;
+    left: 0;
+    background: linear-gradient(.7turn, #008d6c, #6d00ac, #8e00ae, #b50042);
+    box-shadow: inset 0 30px 50px #a0013e;
+    z-index: -1
+}
+
+.ifect12 {
+    left: 0;
+    background: linear-gradient(.7turn, rgba(85, 108, 65, .519), rgba(68, 7, 75, .428));
+    box-shadow: inset 0 30px 50px #01655c92
+}
+
+.ifect13 {
+    background: linear-gradient(.7turn, rgba(116, 1, 129, .441), rgba(0, 119, 83, .519));
+    box-shadow: inset 0 10px 30px #70016581
+}
+
+.ifect14,
+.ifect15 {
+    box-shadow: inset 0 30px 50px #1f8263;
+    position: fixed;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(0, 85, 85, .618))
+}
+
+.ifect14 {
+    top: 0;
+    right: 10%
+}
+
+.ifect15 {
+    top: 15vh;
+    left: 10%
+}
+
+.ifect16 {
+    position: fixed;
+    bottom: 0;
+    right: 2vw;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(0, 85, 85, .618));
+    box-shadow: inset 0 30px 50px #12503c
+}
+
+.ifect17,
+.ifect18,
+.ifect19 {
+    position: fixed;
+    background: linear-gradient(.03turn, rgba(0, 130, 130, .519), rgba(0, 85, 85, .618));
+    box-shadow: inset 0 30px 50px #1f8263
+}
+
+.ifect17 {
+    top: 50%;
+    left: 20vw
+}
+
+.ifect18 {
+    bottom: 70%;
+    left: 3vw
+}
+
+.ifect19 {
+    bottom: 65vh;
+    left: 15vw
+}
+
+.fre {
+    background: radial-gradient(rgba(45, 87, 92, .598), rgba(66, 106, 75, .39));
+    backdrop-filter: blur(5px)
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(.03turn, rgba(0, 47, 52, .628), rgba(0, 37, 36, .681), rgba(0, 39, 41, .593), rgba(0, 46, 48, .501), rgba(0, 46, 48, .575), rgba(93, 38, 1, .667));
+    z-index: 2
+}
+
+:hover.foota {
+    box-shadow: 0 5px 3px var(--black);
+    background: radial-gradient(rgba(29, 41, 41, .749), rgba(23, 34, 35, .802));
+    color: var(--black);
+    font-size: 28px
+}
+
+.blur {
+    backdrop-filter: blur(20px)
+}
+
+.foot-1 {
+    backdrop-filter: blur(10px)
+}
+
+#main,
+#mainpri {
+    backdrop-filter: blur(40px)
+}
+
+.pagelist {
+    height: 3rem;
+    background: linear-gradient(.03turn, rgba(0, 51, 57, .222), rgba(0, 48, 46, .253))
+}
+
+.keyword-c {
+    color: rgb(109 169 255);
+}
+
+.comment-c {
+    color: rgb(21 199 0);
+}
+
+.function-c {
+    color: rgb(255 139 57);
+}
+
+.ifect_back::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .06)
+}

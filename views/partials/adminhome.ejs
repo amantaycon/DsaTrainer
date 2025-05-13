@@ -1,0 +1,53 @@
+<!-- Popup overlay -->
+<div class="popup-overlay" id="overlay"></div>
+
+<!-- Popup -->
+<div id="popup">
+    <h3 class="classh3">Enter Titles & URLs</h3>
+    <form id="popupForm">
+        <div id="inputFields">
+        </div>
+        <div class="buttons">
+            <button class="classbutton" type="button" id="addMore">+ Add More</button>
+            <button class="classbutton" type="button" id="saveData">Save</button>
+            <button class="classbutton" type="button" id="closePopup">Close</button>
+        </div>
+    </form>
+</div>
+
+<!-- Edit Main Section Popup -->
+<div id="editPopup" class="popup">
+    <h3>Edit Section</h3>
+    <input class="input" type="text" id="editTitle" placeholder="Edit title">
+    <button class="button save" onclick="saveEdit()">Save</button>
+    <button class="button close1" onclick="closePopup()">Cancel</button>
+    <button class="button delete" onclick="deleteHeader()">Delete</button>
+</div>
+
+<!-- Edit Sub-Section Popup -->
+<div id="subEditPopup" class="popup">
+    <h3>Edit Sub-Section</h3>
+    <input class="input" type="text" id="subTitle" placeholder="Sub-section Title">
+    <input class="input" type="text" id="subLink" placeholder="Sub-section Link">
+    <input class="input" id="subDesc" placeholder="Sub-section Description">
+    <button class="button save" onclick="saveSubEdit()">Save</button>
+    <button class="button close1" onclick="closePopup()">Cancel</button>
+    <button class="button delete" onclick="deletePopup()">Delete</button>
+</div>
+
+<!-- Add Sub-Section Popup -->
+<div id="addsubPopup" class="popup">
+    <h3>Add New Sub Section</h3>
+    <input class="input" type="text" id="newName" placeholder="Title">
+    <input class="input" type="text" id="newLink" placeholder="Link">
+    <input class="input" id="newDesc" placeholder="Description">
+    <button class="button save" onclick="saveSubData()">Add</button>
+    <button class="button close1" onclick="closePopup()">Cancel</button>
+</div>
+
+<div id="addPopup" class="popup">
+    <h3>Add New Section</h3>
+    <input class="input" type="text" id="addHeadTitle" placeholder="Add title">
+    <button class="button save" onclick="saveHeadData()">Add</button>
+    <button class="button close1" onclick="closePopup()">Cancel</button>
+</div>

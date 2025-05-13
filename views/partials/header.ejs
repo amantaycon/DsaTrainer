@@ -1,0 +1,61 @@
+<header id="ulogo" class="stit0 shead " style="position: fixed; width: 100vw;">
+    <div class="header-m blur">
+        <div class="flex_r m-lr-20">
+            <a class="flex_r" href="/">
+                <div class="center">
+                    <img class="header-lg center" src="/image/DSA_transparent1.png"
+                        alt="logo of website">
+                </div>
+            </a>
+        </div>
+
+        <div class="centerrow">
+            <div class="wide">
+                <nav class="nav">
+                    <ul class="flex_r">
+                        <% if (user && user.admin) { %>
+                            <li><div id="openPopup" class="edithead pointer">Edit</div></li>
+                        <% } %>
+                        <% headerlist.forEach(([title, url]) => { %>
+                            <li><a href="<%- url %>"><%- title %></a></li>
+                        <% }) %>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="center">
+                <% if(user) { %>
+                    <span onclick="showUserNav()">
+                        <img id="usernav" class="header-up center pointer"
+                            src="/<%- user.userurl %>/profile_pic" alt="userdp">
+                    </span>
+                <% } else { %>
+                    <a href="#" onclick="redirectToLogin('/login')">
+                        <img id="usernav" class="header-up center pointer"
+                            src="/image/sign_in.webp" alt="sign in">
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <% if(user){ %>
+        <nav id="usernavli1" class="usernav">
+            <ul class="usernavul blur">
+                <li class="usernavli userd"><%- user.userurl %></li>
+                <li class="usernavli userd"><%- user.email %></li>
+                <li class="usernavli ">
+                    <a class="z_top posck" href="/<%- user.userurl %>">Profile</a>
+                </li>
+                <li class="usernavli ">
+                    <a class="z_top posck" href="/setting">Settings</a>
+                </li>
+                <li class="usernavli">
+                    <a class="z_top posck" href="#" onclick="redirectToLogin('/logout')">Logout</a>
+                </li>
+            </ul>
+            <div class="ifect ifect10"></div>
+        </nav>
+    <% } %>
+</header>

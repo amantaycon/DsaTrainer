@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aman Taycon">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="/image/DSA_Trainer.ico" type="image/x-icon">
+    <% if(user && user.themename){%>
+        <link rel="stylesheet" href="/css1/<%- user.themename %>">
+        <%}else{%>
+            <link rel="stylesheet" href="/css1/defaulthemes.css">
+        <% } %>
+    <link rel="stylesheet" href="/css1/main.css">
+    <link rel="stylesheet" href="/css1/list.css">
+    <link rel="stylesheet" href="/css1/comment.css">
+    <link rel="stylesheet" href="/css1/responsivenase.css">
+    <link rel="stylesheet" href="/css/popop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+
+    <% if(data != null){ %>
+    <title><%- data.title %></title>
+    <meta name="description"
+        content="<%- data.description %>">
+    <meta name="keywords"
+        content="<%- data.keyword %>">
+    <% } %>
+</head>
+
+
+
+<body id="body" class="ifect_page">    
+    <header id="ulogo1" class="shead2 stit0">
+        <div class="header-m blur">
+            <div class="flex_r m-lr-20">
+                <a class="flex_r " href="/">
+                    <div class="center">
+                        <img class="header-lg center" src="/image/DSA_transparent1.png" alt="logo of website">
+                    </div>
+                </a>
+            </div>
+
+            <div class="centerrow">
+                <div class="wide">
+                    <nav class="nav">
+                        <ul class="flex_r">
+                            <% if (user && user.admin) { %>
+                                <li><div id="openPopup" class="edithead pointer">Edit</div></li>
+                            <% } %>
+                            <% headerlist.forEach(([title, url]) => { %>
+                                <li><a href="<%- url %>"><%- title %></a></li>
+                            <% }) %>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="center">
+                    <% if(user) { %>
+                        <span onclick="showUserNav()">
+                            <img id="usernav" class="header-up center pointer"
+                                src="/<%- user.userurl %>/profile_pic" alt="userdp">
+                        </span>
+                    <% } else { %>
+                        <a href="#" onclick="redirectToLogin('/login')">
+                            <img id="usernav" class="header-up center pointer"
+                                src="/image/sign_in.webp" alt="sign in">
+                        </a>
+                    <% } %>
+                </div>
+            </div>
+        </div> 
+        <% if(user){ %>
+            <nav id="usernavli1" class="usernav">
+                <ul class="usernavul blur">
+                    <li class="usernavli userd"><%- user.userurl %></li>
+                    <li class="usernavli userd"><%- user.email %></li>
+                    <li class="usernavli ">
+                        <a class="z_top posck" href="/<%- user.userurl %>">Profile</a>
+                    </li>
+                    <li class="usernavli ">
+                        <a class="z_top posck" href="/setting">Settings</a>
+                    </li>
+                    <li class="usernavli">
+                        <a class="z_top posck" href="#" onclick="redirectToLogin('/logout')">Logout</a>
+                    </li>
+                </ul>
+                <div class="ifect ifect10"></div>
+            </nav>
+            <% } %>
+    </header>
+
+    <div class="stit3 pagelist shead2">
+        <div class="blur center">
+            <div id="navpag" class="blur pointer" onclick="showNavLeft()">
+                <svg viewBox="0 0 24 24"
+                    style=" width: 1.7rem; height: 1.7rem;margin: 3px 15px; float: left;">
+                    <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--orange); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <polygon
+                            points="75.96,30.96 75.96,13.34 67.26,13.34 67.26,22.26 45,0 0.99,44.02 7.13,50.15 45,12.28 82.88,50.15 89.01,44.02 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--orange); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) "></polygon>
+                        <polygon
+                            points="45,20 14.04,50.95 14.04,90 35.29,90 35.29,63.14 54.71,63.14 54.71,90 75.96,90 75.96,50.95 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--orange); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) "></polygon>
+                    </g>
+                </svg>
+            </a>
+
+            <ul id="pagehead" class="flex_r mar_p_20 ovscroy wh80vw"></ul>
+        </div>
+
+        <nav id="navpagnav" class="navpage stit3 blur shead2 ovscrox"></nav>
+    </div>
+
+
+    <main>
+        <div class="ifectp ifect14"></div>
+        <div class="ifectp ifect15"></div>
+        <div class="ifectp ifect16"></div>
+        <div class="ifectp ifect17"></div>
+        <div class="ifectp ifect18"></div>
+        <div class="ifectp ifect19"></div>
+        <div id="main">
+            <% if (user && user.admin) { %>
+                <div onclick="openEditor()" id="editpencil">✏️</div>
+                <div class="toolbar none">
+                    <select id="headerSelector" onchange="chooseHeader()">
+                        <option value="" selected disabled>Header</option>
+                        <option value="h1">H1</option>
+                        <option value="h2">H2</option>
+                        <option value="h3">H3</option>
+                        <option value="h4">H4</option>
+                        <option value="h5">H5</option>
+                        <option value="h6">H6</option>
+                        <option value="p">P</option>
+                    </select>
+                    <button class="button11" onclick="execCommand('bold')">B</button>
+                    <button class="button11" onclick="execCommand('italic')"><i>I</i></button>
+                    <button class="button11" onclick="execCommand('underline')"><u>U</u></button>
+                    <select id="colorSelector" onchange="chooseColor()">
+                        <option value="" selected disabled>List of Colors</option>
+                        <option class="color1" value="color1">Color 1</option>
+                        <option class="color2" value="color2">Color 2</option>
+                        <option class="color3" value="color3">Color 3</option>
+                        <option class="color4" value="color4">Color 4</option>
+                        <option class="color5" value="color5">Color 5</option>
+                    </select>
+                    <input class="input11" type="number" id="fontSize" onchange="changeFontSize()" value="11">
+                    <button class="button11" onclick="execCommand('justifyLeft')">L</button>
+                    <button class="button11" onclick="execCommand('justifyCenter')">C</button>
+                    <button class="button11" onclick="execCommand('justifyRight')">R</button>
+                    <button class="button11" onclick="execCommand('justifyFull')">J</button>
+                    <button class="button11" onclick="execCommand('insertUnorderedList')">•</button>
+                    <button class="button11" onclick="addLink()">🔗</button>
+                    <input class="input11" type="file" id="imageInput" accept="image/*" onchange="addImage()">
+                    <select id="codeLanguageSelector" onchange="CodeBlockSyntax()">
+                        <option value="">Select Code Language</option>
+                        <option value="c++">C++</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <button class="button11" onclick="addTable()">📊</button>
+                    <button class="button11" onclick="saveContent()">💾 Save</button>
+                    <button class="close-btn" onclick="closeEditor()">X</button>
+                </div>
+            <% } %>
+            <div id="pagedata" class="macon white"></div>
+        </div>
+    </main>
+
+    <% if (user && user.admin) { %>
+        <!-- Popup overlay -->
+        <div class="popup-overlay" id="overlay"></div>
+
+        <!-- Popup -->
+        <div id="popup">
+            <h3 class="classh3">Enter Titles & URLs</h3>
+            <form id="popupForm">
+                <div id="inputFields">
+                </div>
+                <div class="buttons">
+                    <button class="classbutton" type="button" id="addMore">+ Add More</button>
+                    <button class="classbutton" type="button" id="saveData">Save</button>
+                    <button class="classbutton" type="button" id="closePopup">Close</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Add Sub-Section Popup -->
+        <div id="addsubPopup" class="popup">
+            <h3>Add New Nav Section</h3>
+            <input class="input black" type="text" id="title11" placeholder="Head Title for SEO">
+            <input class="input black" type="text" id="navtitle" placeholder="Name of Nav Title">
+            <input class="input black" type="text" id="keyword11" placeholder="Keyword for SEO">
+            <textarea class="input black" id="description" placeholder="Description For SEO"></textarea>
+            <button class="button save" onclick="CreateNav()">Add</button>
+            <button class="button close1" onclick="closePopup()">Cancel</button>
+        </div>
+        <div id="editsubPopup" class="popup">
+            <h3>Add New Nav Section</h3>
+            <input class="input black" type="text" id="title111" placeholder="Head Title for SEO">
+            <input class="input black" type="text" id="navtitle1" placeholder="Name of Nav Title">
+            <input class="input black" type="text" id="keyword111" placeholder="Keyword for SEO">
+            <textarea class="input black" id="description1" placeholder="Description For SEO"></textarea>
+            <button class="button save" onclick="updatenavdata()">Update</button>
+            <button class="button close1" onclick="closePopup()">Cancel</button>
+        </div>
+
+    <% } %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <% if (user && user.admin) { %>
+        <script>
+            window.admin = true;
+        </script>
+        <script src="/js/headeradmin.js"></script>
+        <script src="/js/pageadmin.js"></script>
+    <% } %>
+    <script>
+        window.navName = "<%- nav.featured_id + '' + nav.name+'_nav' %>";
+        window.link = "<%- path.url %>";
+        <% if(data == null){ %>
+            window.content = null;
+        <% }else{ %>
+            window.content = "<%- data.content_address %>";
+            window.contentid = <%- data.id %>;
+        <% } %>
+
+    </script>
+    <script src="/js/lodecontent.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+
+</html>

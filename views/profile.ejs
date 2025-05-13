@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aman Taycon">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="/image/DSA_Trainer.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <link rel="stylesheet" href="/css/floattab.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <% if(user && user.themename){%>
+        <link rel="stylesheet" href="/css1/<%- user.themename %>">
+        <%}else{%>
+            <link rel="stylesheet" href="/css1/defaulthemes.css">
+        <% } %>
+    <link rel="stylesheet" href="/css1/main.css">
+    <link rel="stylesheet" href="/css1/responsivenase.css">
+    <link rel="stylesheet" href="/css/popop.css">
+    
+    <title>Profile | DSA TRAINER</title>
+    
+</head>
+
+<body id="body" class="ifect_page">
+    <%- include('partials/header') %>
+    <main>
+        <div class="ifectp ifect14"></div>
+        <div class="ifectp ifect15"></div>
+        <div class="ifectp ifect16"></div>
+        <div class="ifectp ifect17"></div>
+        <div class="ifectp ifect18"></div>
+        <div class="ifectp ifect19"></div>
+        <div id="main">
+            <div style="height: 15vh;"></div>
+
+                <div class="profilev">
+                    <div class="sbox seti1">
+                        <div class="prfpic1">
+                            <img class="prfpic1" src=/<%- data.userurl %>/profile_pic alt="DP">
+                        </div>
+                        <div class="welfname white"><%- data.fullname %></div><br>
+                        <div><h3 class="bioh">Bio</h3></div>
+                        <div class="bio white"><p><%- data.bio %></p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <% if (user && user.admin) { %>
+        <%- include('partials/adminhome') %>
+    <% } %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <% if (user && user.admin) { %>
+        <script>
+            window.admin = true;
+        </script>
+        <script src="/js/headeradmin.js"></script>
+    <% } %>
+    <script src="/js/nav.js"></script>
+</body>
+
+</html>

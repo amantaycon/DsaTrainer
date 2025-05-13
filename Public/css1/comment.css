@@ -1,0 +1,128 @@
+#comblock,
+#comment {
+    background: rgba(0, 0, 0, .546)
+}
+
+.comhead,
+.re,
+.se {
+    display: flow-root
+}
+
+.comnav,
+.usercom {
+    color: var(--orange)
+}
+
+::placeholder {
+    color: var(--orange);
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: var(--orange)
+}
+
+::-ms-input-placeholder {
+    color: var(--orange)
+}
+
+#comment {
+    width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid var(--orange);
+    color: white
+}
+
+#submit {
+    background: 0 0;
+    border: none;
+    margin-left: 10px
+}
+
+.com-re,
+.com-se {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    max-width: 80%;
+    height: fit-content
+}
+
+#comment_box {
+    width: 90%;
+    height: 80vh;
+    padding: 10px
+}
+
+@media screen and ((min-width:800px) and (max-width:1000px)) {
+    #comment {
+        width: 80%
+    }
+}
+
+@media screen and (max-width:600px) {
+    #comment {
+        width: 75%
+    }
+}
+
+.com-re {
+    border-bottom-right-radius: 10px;
+    float: left
+}
+
+.re,
+.se {
+    margin: 10px 0
+}
+
+.com-se {
+    border-bottom-left-radius: 10px;
+    float: right
+}
+
+#comblock {
+    font-size: larger;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.comhead {
+    font-size: small;
+    margin-top: -9px
+}
+
+.usercom {
+    float: left;
+    user-select: none
+}
+
+.comdel {
+    float: right
+}
+
+.comnav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 2px 10px
+}
+
+.come_whi {
+    color: var(--white);
+    font-size: medium
+}
+
+.precom {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: var(--font_style)
+}
+
+#comid {
+    display: none
+}

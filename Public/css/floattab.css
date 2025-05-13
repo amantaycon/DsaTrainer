@@ -1,0 +1,400 @@
+#prephoto {
+    display: none;
+    /* display: block; */
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+}
+
+.cross {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cross svg:hover {
+    background: var(--orange_light);
+}
+
+.cross svg {
+    float: right;
+    margin: 10px;
+}
+
+#preview {
+    width: 80%;
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.adjstpre {
+    width: 80%;
+    height: auto;
+}
+
+#cropButton {
+    display: none;
+    width: 100%;
+    background-color: var(--orange);
+    height: 40px;
+    font-family: var(--font_style);
+    font-size: larger;
+    color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+
+#cropButton:hover {
+    background-color: var(--green);
+    font-weight: bolder;
+    border: 1px solid var(--orange);
+    cursor: pointer;
+}
+
+.predesin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    max-width: 90vw;
+    height: 70vh;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px var(--light_black1);
+}
+
+/* Basic styles for the fixed tab menu */
+#fixedTabMenu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    z-index: 1;
+    box-shadow: 0 4px 8px var(--light_black1);
+    backdrop-filter: blur(20px);
+    background: var(--light_green);
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#fixedTabMenumess {
+    display: none;
+    width: fit-content;
+    right: 0;
+    bottom: 40px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px var(--light_black1);
+    backdrop-filter: blur(20px);
+    background: var(--light_green);
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    border: none;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color: var(--black);
+    margin: 2px 0;
+}
+
+.tab i {
+    margin-right: 10px;
+    /* Space between the icon and text */
+}
+
+.tab:hover {
+    background-color: var(--orange_light);
+    font-weight: bolder;
+}
+
+.postfloat {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(30px);
+    background: var(--white);
+    box-shadow: 0 0px 100px var(--light_black1);
+    height: fit-content;
+    width: fit-content;
+    z-index: 2;
+}
+
+.postcon {
+    width: 70vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postda {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.postda1 {
+    width: 98%;
+    height: 70vh;
+    margin-top: 5px;
+    border: 1px solid var(--black);
+    background-color: var(--orange_light);
+    display: flex;
+    flex-direction: column;
+}
+
+.tithead {
+    width: 98%;
+}
+
+.contit {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.titlep {
+    width: 60vw;
+    height: 100px;
+    background-color: rgba(0, 36, 9, 0);
+    color: var(--black);
+    padding: 5px;
+    margin: 0 5px;
+    resize: none;
+    font-size: 15px;
+    border-style: none;
+    outline: none;
+    display: flex;
+}
+
+.poupload {
+    width: 100%;
+    height: fit-content;
+}
+
+.buttonu {
+    font-size: larger;
+    margin: 5px 15px;
+    padding: 10px 13px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--orange);
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.buttonu:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+#text-container,#text-containermes {
+    width: 80%;
+    height: 400px;
+    padding: 20px;
+    cursor: text;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls label {
+    margin-right: 5px;
+}
+
+.controls input,
+.controls select {
+    margin-right: 8px;
+    width: 40px;
+}
+
+.code {
+    background: var(--code_back);
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    color: var(--black);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.code1 {
+    width: 99%;
+    height: 99%;
+    display: flex;
+}
+
+.codet {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: var(--black);
+    padding: 6px;
+    padding-left: 15px;
+    resize: none;
+    font-size: 15px;
+    border-style: none;
+    font-family: inherit;
+    overflow-y: scroll;
+    white-space: nowrap;
+    outline: none;
+}
+
+#line-numbers,#line-numbersmes {
+    margin-top: 2px;
+    width: 30px;
+    padding-top: 2px;
+    padding-right: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    text-align: right;
+    color: var(--orange);
+    overflow: hidden;
+}
+
+.codet::-webkit-scrollbar {
+    width: .4rem;
+    height: .5rem;
+}
+
+.codet::-webkit-scrollbar-track {
+    background: var(--white)
+}
+
+.codet::-webkit-scrollbar-thumb {
+    background: var(--orange)
+}
+
+.file {
+    height: 200px;
+    width: 200px;
+    background: var(--orange_light);
+    border-radius: 5px;
+}
+
+.filer {
+    flex-direction: column;
+}
+
+#filena,#filenames {
+    font-size: larger;
+    color: var(--black);
+    cursor: default;
+}
+
+#imagepre,
+#videopre,
+#filepre,
+#textpre,
+#codepre {
+    display: none;
+}
+
+#textpre,#textpremes {
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+#listfloat {
+    width: 320px;
+}
+
+.conpeople {
+    float: right;
+}
+
+.floatheit {
+    max-height: 60vh;
+}
+
+#moreMenu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    z-index: 1;
+    box-shadow: 0 4px 8px var(--light_black1);
+    backdrop-filter: blur(20px);
+    background: var(--light_green);
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#imogifloat {
+    position: absolute;
+    bottom: 58px;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 0 2px var(--light_black1);
+}
+
+#imogifloat::-webkit-scrollbar {
+    width: .3rem;
+    height: .3rem;
+}
+
+#imogifloat::-webkit-scrollbar-track {
+    background: var(--white)
+}
+
+#imogifloat::-webkit-scrollbar-thumb {
+    background: var(--orange)
+}
+
+.emoji-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-width: 400px;
+}
+
+.emoji {
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tabs1 {
+    display: flex;
+    flex-direction: row;
+}
+

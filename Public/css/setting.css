@@ -1,0 +1,243 @@
+.setting,.profilev {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+    /* margin-top: 0; */
+    align-items: center;
+    justify-content: center;
+}
+
+.seti1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.prfpic1 {
+    width: 300px;
+    border-radius: 100%;
+}
+
+.seti {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sbox {
+    background: var(--light_black);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.sehed {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    border-bottom: 1px solid var(--green);
+}
+
+.prfpic {
+    width: 12vw;
+    border-radius: 100%;
+}
+
+#uphoto {
+    display: none;
+}
+
+.borrig {
+    border-right: 0.1px solid var(--green);
+}
+
+.updatep {
+    display: flex;
+    background-color: var(--light_green);
+    margin: auto;
+    width: fit-content;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.updatep span {
+    margin: 8px;
+}
+
+.seticon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.sminibox {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light_green);
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.smboxl {
+    color: var(--black);
+    margin: 5px;
+    font-size: 17px;
+}
+
+.smboxi {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: none;
+    border-color: var(--orange_light);
+    color: var(--black);
+    font-size: 16px;
+}
+.protop{
+    margin-top: 25px;
+}
+hr{
+    border: 1px solid var(--orange);
+}
+.prsave {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    margin-right: 25px;
+    padding: 7px 15px;
+    background-color: var(--orange_light);
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid var(--orange);
+    color: var(--black);
+    width: 40px;
+}
+
+:hover.prsave {
+    background-color: var(--light_green);
+    color: var(--orange);
+}
+
+.presave {
+    display: flex;
+    justify-content: end;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.grida {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.textarea {
+    resize: none;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.fonsize {
+    font-size: 20px;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: none;
+    border-color: var(--orange_light);
+    color: var(--orange);
+}
+.bgwhite{
+    background-color: var(--white);
+}
+.pminibox{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: fit-content;
+    
+}
+.orange{
+    color: var(--orange);
+}
+.bold{
+    font-weight: var(--bold);
+}
+.martop{
+    margin-top: 50px;
+}
+.marle{
+    margin-left: 30px;
+}
+.pconde{
+    /* background-color: var(--green); */
+    width: 100%;
+    /* height: 30px; */
+}
+.gridro{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.pocon1{
+    margin: 0px 25px;
+    /* background-color: var(--orange); */
+    padding: 5px;
+}
+.conpeople{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.chbox{
+    margin: 2px;
+    background-color: var(--orange_light);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 13px;
+}
+:hover.chbox{
+    background-color: var(--green);
+}
+.textun{
+    text-decoration: none;
+}
+.bio{
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--orange);
+}
+.wrap{
+    text-wrap: wrap;
+}
+.ahead{
+    text-decoration: none;
+    color: var(--black);
+}
+.welfname{
+    font-size: 50px;
+    text-align: center;
+}
+.bio{
+    font-size: large;
+}
+.bioh{
+    font-size: xx-large;
+    color: var(--orange);
+}
+
